@@ -23,3 +23,12 @@ $(window).on("load", () => {
 $(document).ready(() => {
   console.log("DOMContentLoaded");
 });
+
+formJquery.on("submit", (e) => {
+  e.preventDefault();
+  getWeatherDataFromApi();
+});
+
+const getWeatherDataFromApi = () => {
+  console.log("Ajax Func. is called ");
+};
